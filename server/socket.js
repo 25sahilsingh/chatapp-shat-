@@ -14,6 +14,7 @@ const io = new Server(expressServer, {
   },
 });
 io.on("connection", (socket) => {
+  console.log("this is my id", socket.id);
   socket.on("sendroom", (room) => {
     socket.join(room);
   });

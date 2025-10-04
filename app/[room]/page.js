@@ -74,7 +74,7 @@ function Page() {
   console.log(previousmessage);
   return (
     <div className="h-screen flex flex-col bg-background">
-      <h1 className="m-5 font-bold">Room: {room}</h1>
+      <h1 className="m-5 font-bold text-white">Room: {room}</h1>
       <div className="flex-1 flex justify-center overflow-auto">
         <div className="w-10/12 h-full border-4 p-2 flex flex-col-reverse overflow-y-scroll scroll-auto">
           <div ref={endOfMessagesRef}></div>
@@ -96,9 +96,9 @@ function Page() {
         <input
           value={messages}
           onChange={(e) => setmessages(e.target.value)}
-          className="w-8/12 h-10 border-4 border-blue-500 p-2 bg-background"
+          className="w-8/12 h-10 border-4 border-blue-500 p-2 bg-background text-white"
         />
-        <button className="w-2/12 h-10 border-4 border-green-500 border-solid">
+        <button className="w-2/12 h-10 border-4 border-green-500 border-solid text-white">
           Send
         </button>
       </form>
