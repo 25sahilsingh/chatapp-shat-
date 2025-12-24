@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import { Server, Socket } from "socket.io";
+import { Server } from "socket.io";
 const app = express();
 app.use(cors({ origin: "*", methods: ["GET", "POST"] }));
 app.use(express.static("public"));
